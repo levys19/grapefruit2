@@ -1,15 +1,71 @@
-html{
-    font-family: "Times New Roman", Times, serif;
-}
 
 #logo{
     display: block;
     margin: 0 auto;
     margin-top: 120px;
 }
-
-h1{
-    text-align: center;
-    vertical-align: middle;
-    line-height: 90px;
+body {
+	font-family: 'Lucida Grande', 'Helvetica Neue', sans-serif;
+	font-size: 13px;
 }
+
+div {
+	width: 200px;
+	margin: 20px auto;
+}
+
+div .button {
+	margin: 10 15px 15px 0;
+}
+.button {
+	display: inline-block;
+	background-color: #f5f5f5;
+	background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image: -ms-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image: -o-linear-gradient(top,#f5f5f5,#f1f1f1);
+	background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+	color: #444;
+	
+	border: 1px solid #dcdcdc;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	cursor: default;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	height: 27px;
+	line-height: 27px;
+	min-width: 54px;
+	padding: 0 8px;
+	text-decoration: none;
+}
+.button.orange {
+	background-color: #fe7d4d;
+	background-image: -webkit-linear-gradient(top,#fe7d4d,#ed7247);
+	background-image: -moz-linear-gradient(top,#fe7d4d,#ed7247);
+	background-image: -ms-linear-gradient(top,#fe7d4d,#ed7247);
+	background-image: -o-linear-gradient(top,#fe7d4d,#ed7247);
+	background-image: linear-gradient(top,#fe7d4d,#ed7247);
+
+	border: 1px solid #ed5f30;
+	color: white;
+}
+
+.button.orange:hover {
+	border: 1px solid #b7492f;
+	
+	background-color: #e85a35;
+	background-image: -webkit-linear-gradient(top,#fe754d,#e85a35);
+	background-image: -moz-linear-gradient(top,#fe754d,#e85a35);
+	background-image: -ms-linear-gradient(top,#fe754d,#e85a35);
+	background-image: -o-linear-gradient(top,#fe754d,#e85a35);
+	background-image: linear-gradient(top,#fe754d,#e85a35);
+	
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+

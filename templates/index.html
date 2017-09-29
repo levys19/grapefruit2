@@ -2,11 +2,24 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
-
+        
+        <!-- bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+              integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+                integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        
+        <title> GrapeFruit </title>
     </head>
     <body>
-        <a href src="https://www.google.com"><img src="/static/images/logo.png" id= "logo" alt="Grapefruit.life" title="Click me" style="width:580px;height:580px;"></a>
-        <h1>
-        </h1>
+        <a href src="/templates/choose_city.html"><img src="/static/images/logo.png" id= "logo" alt="Grapefruit.life" title="Click me" style="width:580px;height:580px;"></a>
+        <div class="text-center">
+            <form id="form" action="." method="POST">
+                <input type="text" name="text">
+                <a href="#" class="button orange">Here, Please</a>
+
+            </form>
+        </div>
+        
     </body>
 </html>
