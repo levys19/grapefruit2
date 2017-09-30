@@ -12,11 +12,11 @@
         <title> GrapeFruit </title>
     </head>
     <body>
-        <a href src="/templates/choose_city.html"><img src="/static/images/logo.png" id= "logo" alt="Grapefruit.life" title="Click me" style="width:580px;height:580px;"></a>
+        <a href src="{{url_for('static',filename='templates/index.html') }}"><img src="/static/images/logo.png" id= "logo" alt="Grapefruit.life" title="Click me" style="width:580px;height:580px;"></a>
         <div class="text-center">
             <form id="form" action="." method="POST">
                 <input type="text" name="text">
-                <a href="#" class="button orange">Here, Please</a>
+                <input class="orange button" type="submit" name="my-form" value="Here Please">
 
             </form>
         </div>
