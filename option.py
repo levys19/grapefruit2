@@ -5,29 +5,15 @@ import time
 
 class Option:
     @classmethod
-    def breakfast_search(cls,city):
+    def meal_search(cls,city,meal):
         params = {}
         params["location"] = city
         params["sort_by"] = "rating"
         params["limit"] = 10
-        params["categories"] = "breakfast"
+        params["categories"] = meal
+        params["open_now"] = True
         return params
 
-    def lunch_search(cls,city):
-        params = {}
-        params["location"] = city
-        params["sort_by"] = "rating"
-        params["limit"] = 10
-        params["categories"] = "lunch"
-        return params
-
-    def dinner_search(cls,city):
-        params = {}
-        params["location"] = city
-        params["sort_by"] = "rating"
-        params["limit"] = 10
-        params["categories"] = "dinner"
-        return params
 
 
     @classmethod
