@@ -7,6 +7,11 @@
                 integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     </head>
     <body>
-    <h1></h1>
+      {% for things in restauraunt %}
+          <h1> {{things["name"]}}</h1>
+          <img src="{{things["image_url"]}}" alt="name">
+          <h2> {{things["price"]}} </h2>
+          <h3> {{things["rating"]}} </h3>
+      {% endfor %}
     </body>
 </html>

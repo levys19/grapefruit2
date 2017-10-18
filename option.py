@@ -8,9 +8,8 @@ class Option:
     def meal_search(cls,city,meal):
         params = {}
         params["location"] = city
-        params["sort_by"] = "rating"
         params["limit"] = 10
-        params["categories"] = meal
+        params["term"] = meal
         params["open_now"] = True
         return params
 

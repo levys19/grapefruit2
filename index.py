@@ -23,15 +23,12 @@ def my_form_post():
         whichMeal = "lunch"
     elif currTime > 16 and currTime < 22:
         whichMeal = "dinner"
+    else:
+        whichMeal = "restauraunt"
     param = findCity.meal_search(cityName,whichMeal)
     locationData = findCity.get_results(param)
-    restauraunt = []
-    for items in locationData["businesses"]:
-        restaurauntInfo = [items["name"],items["image_url"],items["price"],items["distance"]]
-        restauraunt.append(restaurauntInfo)
-    for things in restauraunt:
-        print(things)
-    return render_template("choices.html",restauraunt = restauraunt)
+    print(currTime)
+    return render_template("choices.html",restauraunt = locationData["businesses"])
 
 
 if __name__ == "__main__":
