@@ -31,7 +31,6 @@ def my_form_post():
         restauraunt.append(restaurauntInfo)
     for things in restauraunt:
         print(things)
-        
     return render_template("choices.html",restauraunt = restauraunt)
 
 
